@@ -1,0 +1,419 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   Dark Background
+=========================== */
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+}
+
+/* Main Content */
+
+.md-main{
+    background:#0f172a;
+}
+
+.md-content{
+    background:#0f172a;
+}
+
+/* ===========================
+   Text
+=========================== */
+
+.md-typeset{
+    color:white;
+}
+
+/* ===========================
+   3D Heading
+=========================== */
+
+h1{
+
+    font-size:48px;
+
+    font-weight:800;
+
+    text-align:center;
+
+    color:#38bdf8;
+
+    text-shadow:
+
+    0px 2px 0px #0ea5e9,
+
+    0px 4px 0px #0284c7,
+
+    0px 6px 12px rgba(0,0,0,.5);
+
+    transition:.5s;
+}
+
+h1:hover{
+
+    transform:
+
+    perspective(800px)
+
+    rotateX(12deg)
+
+    scale(1.05);
+
+    text-shadow:
+
+    0px 2px 0px #38bdf8,
+
+    0px 8px 20px cyan;
+}
+
+h2{
+
+    font-size:34px;
+
+    color:#60a5fa;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+
+    0 12px 25px rgba(0,255,255,.15);
+
+    transition:.4s;
+}
+
+h2:hover{
+
+    transform:
+
+    perspective(800px)
+
+    rotateY(10deg)
+
+    translateY(-5px);
+
+    box-shadow:
+
+    0 20px 40px cyan;
+}
+
+h3{
+
+    color:#93c5fd;
+
+    transition:.4s;
+}
+
+h3:hover{
+
+    transform:scale(1.05);
+}
+
+/* ===========================
+   Paragraph
+=========================== */
+
+p{
+
+    color:#e2e8f0;
+
+    font-size:18px;
+
+    line-height:1.8;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+table{
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,255,255,.15);
+
+    transition:.4s;
+}
+
+table:hover{
+
+    transform:
+
+    translateY(-6px);
+
+    box-shadow:
+
+    0 20px 45px cyan;
+}
+
+/* ===========================
+   Images
+=========================== */
+
+img{
+
+    border-radius:20px;
+
+    transition:.5s;
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.5);
+}
+
+img:hover{
+
+    transform:
+
+    perspective(900px)
+
+    rotateY(8deg)
+
+    scale(1.05);
+
+    box-shadow:
+
+    0 25px 60px cyan;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+.md-tabs{
+
+    background:#111827;
+}
+
+.md-tabs__link{
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.md-tabs__link:hover{
+
+    color:#38bdf8;
+
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   Sidebar
+=========================== */
+
+.md-sidebar{
+
+    background:#111827;
+}
+
+/* ===========================
+   Animation
+=========================== */
+
+.md-content{
+
+    animation:fadeIn .8s ease;
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+/* ===== Fix Text Color in Dark Mode ===== */
+
+/* Main content */
+.md-typeset,
+.md-typeset p,
+.md-typeset li,
+.md-typeset td,
+.md-typeset th,
+.md-typeset strong,
+.md-typeset em {
+    color: #ffffff !important;
+}
+
+/* Navigation */
+.md-nav__title,
+.md-nav__link {
+    color: #ffffff !important;
+}
+
+/* Table */
+.md-typeset table {
+    color: white !important;
+}
+
+/* Code */
+.md-typeset code {
+    color: #00e5ff !important;
+}
+
+/* Sidebar */
+.md-sidebar {
+    background: #0f172a;
+}
+
+/* Header */
+.md-header {
+    background: #111827;
+}
+
+/* Footer */
+.md-footer {
+    background: #111827;
+    color: white;
+}
+/* ===== Fix Dark Mode Text ===== */
+
+.md-typeset {
+    color: #ffffff !important;
+}
+
+.md-typeset p,
+.md-typeset li,
+.md-typeset td,
+.md-typeset th,
+.md-typeset strong,
+.md-typeset em {
+    color: #ffffff !important;
+}
+
+/* Tables */
+.md-typeset table {
+    background: #1e293b !important;
+    color: #ffffff !important;
+}
+
+.md-typeset th {
+    background: #0f172a !important;
+    color: #38bdf8 !important;
+}
+
+.md-typeset td {
+    background: #1e293b !important;
+    color: #ffffff !important;
+}
+
+/* Links */
+.md-typeset a {
+    color: #60a5fa !important;
+}
+
+/* Sidebar */
+.md-nav__link,
+.md-nav__title {
+    color: #ffffff !important;
+}
+/* ===== Left Sidebar ===== */
+.md-sidebar {
+    background-color: #0f172a !important;
+}
+
+.md-sidebar__scrollwrap {
+    background-color: #0f172a !important;
+}
+
+.md-nav {
+    background-color: #0f172a !important;
+}
+
+.md-nav__link {
+    color: #ffffff !important;
+}
+
+.md-nav__link:hover {
+    color: #38bdf8 !important;
+}
+
+/* ===== Right Table of Contents ===== */
+.md-sidebar--secondary {
+    background-color: #0f172a !important;
+}
+
+.md-sidebar--secondary .md-nav {
+    background-color: #0f172a !important;
+}
+
+.md-sidebar--secondary .md-nav__link {
+    color: #ffffff !important;
+}
+
+.md-sidebar--secondary .md-nav__link:hover {
+    color: #38bdf8 !important;
+}
+
+/* ===== Active Navigation Link ===== */
+.md-nav__link--active {
+    color: #38bdf8 !important;
+    font-weight: bold;
+}
+/* ===================================
+   Floating Image Animation
+=================================== */
+
+.md-typeset img {
+    display: block;
+    margin: 25px auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+    transition: all 0.5s ease;
+    animation: floating 4s ease-in-out infinite;
+}
+
+/* Hover Effect */
+.md-typeset img:hover{
+    transform: scale(1.08) translateY(-12px);
+    box-shadow: 0 35px 70px rgba(0,180,255,.5);
+    cursor: pointer;
+}
+
+/* Floating Animation */
+@keyframes floating{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
