@@ -1,0 +1,61 @@
+site_name: Internship Documentation
+site_url: https://YOUR_GITHUB_USERNAME.github.io/InternshipDocumentation/
+
+theme:
+  name: material
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+
+  font:
+    text: Poppins
+    code: JetBrains Mono
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.emoji
+
+nav:
+  - 🏠 Home: index.md
+  - 👨‍💻 About Me: about.md
+  - 🏢 Internship: internship.md
+  - 💻 Technologies: technologies.md
+  - 📅 Daily Tasks: tasks.md
+  - 🚀 Project: project.md
+  - ⚠️ Challenges: challenges.md
+  - 🖼️ Gallery: gallery.md
+  - 🎓 Conclusion: conclusion.md
+
+extra_css:
+  - assets/stylesheets/extra.css
